@@ -10,23 +10,23 @@
 
 
 <select id="LANG" onchange="loadAnotherLang()">
-  <option value="En">English</option>
-  <option value="Fr">French</option>
-  <option value="Jp">Japanese</option>
-  <option value="Cn">Chinese</option>
+  <option value="en">English</option>
+  <option value="fr">French</option>
+  <option value="jp">Japanese</option>
+  <option value="cn">Chinese</option>
 </select>
 
 
-<?php 
+<?php
 	if(isset($_GET['LANG']))
 	{
 		$lang = $_GET['LANG'];
 	}
 	else
 	{
-		$lang = 'En'; 
+		$lang = 'en';
 	}
-	include($lang. '.php' ); 
+	include($lang. '.php' );
 ?>
 
 <div id="demo"></div>
