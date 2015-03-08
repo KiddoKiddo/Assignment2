@@ -2,13 +2,13 @@
 <head></head>
 <body>
 <h1>Case 09</h1>
-	
+
 <?php
 $csrfToken = 'wkjdb-iouer-234k3-wklu3k';
 if(isset($_POST['data']) and isset($_POST['csrf_token']) and
   $_POST['csrf_token'] == $csrfToken){
   echo "Successful post.<br/>";
-  echo "Data: ".$_POST['data']; 
+  echo "Data: ".$_POST['data'];
 }
 ?>
 <form action='' method='post'>
@@ -17,4 +17,4 @@ if(isset($_POST['data']) and isset($_POST['csrf_token']) and
   <input type='submit' name='submit' value='submit'/>
 </form>
 </body>
-</html
+</html>
